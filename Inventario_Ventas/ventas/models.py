@@ -58,7 +58,7 @@ class Venta(models.Model):
         verbose_name_plural = "Ventas"
 
     def __str__(self):
-        return self.producto_vendido
+        return f"{self.producto_vendido}"
 
 
 class Cliente(models.Model):
