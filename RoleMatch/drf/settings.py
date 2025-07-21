@@ -130,6 +130,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
-  "site_title": "Programmer List",
+  "site_brand": "Lista de usuarios",
   "welcome_sign": "Bienvenido al panel de adminstración"
 }

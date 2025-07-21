@@ -1,12 +1,12 @@
 from rest_framework import serializers
-from .models import Programmer, Designer
+from .models import Programador, Disenador
 
-class ProgrammerSerializer(serializers.ModelSerializer):
+class ProgramadorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Programmer
+        model = Programador
         fields = '__all__'
 
-class DesignerSerializer(serializers.ModelSerializer):
+class DisenadorSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Designer
+        model = Disenador
         fields = '__all__'

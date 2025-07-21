@@ -1,14 +1,14 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import ProgrammerSerializer, DesignerSerializer
-from .models import Programmer, Designer
+from .serializers import ProgramadorSerializer, DisenadorSerializer
+from .models import Programador, Disenador
 
 # Create your views here.
 
-class ProgrammerViewSet(viewsets.ModelViewSet):
-    queryset = Programmer.objects.all()
-    serializer_class = ProgrammerSerializer
+class ProgramadorViewSet(viewsets.ModelViewSet):
+    queryset = Programador.objects.all()
+    serializer_class = ProgramadorSerializer
 
-class DesignerViewSet(viewsets.ModelViewSet):
-    queryset = Designer.objects.all()
-    serializer_class = DesignerSerializer
+class DisenadorViewSet(viewsets.ModelViewSet):
+    queryset = Disenador.objects.all()
+    serializer_class = DisenadorSerializer
